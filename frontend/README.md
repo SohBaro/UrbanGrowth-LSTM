@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# UrbanGrowth-LSTM (Frontend Dashboard) 🖥️
 
-## Project info
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-Fast-yellow)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-cyan)
 
-**URL**: https://lovable.dev/projects/23fb1f4a-66ab-4742-914b-3f9fe7eaacad
+This directory contains the user interface for the **UrbanGrowth-LSTM** project. It is a modern, responsive web application built to visualize satellite road segmentation results in real-time.
 
-## How can I edit this code?
+**🔗 Live Preview:** [Coming Soon on Vercel](#) *(Link will be updated after deployment)*
 
-There are several ways of editing your application.
+## ⚡ Features
 
-**Use Lovable**
+* **Interactive Dashboard:** Drag-and-drop file upload interface.
+* **Real-time Visualization:** Side-by-side comparison of original satellite imagery and AI-generated road masks.
+* **Modern UI:** Built with **Shadcn UI** and **Tailwind CSS** for a clean, scientific aesthetic.
+* **Metrics Display:** Visualizes road pixel coverage and density stats.
+* **Export Tools:** One-click download for segmentation masks and overlays.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/23fb1f4a-66ab-4742-914b-3f9fe7eaacad) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+* **Framework:** React 18 + TypeScript
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS
+* **Components:** Shadcn UI + Lucide React Icons
+* **State Management:** React Hooks (`useState`, `useEffect`)
 
-**Use your preferred IDE**
+## 🚀 Local Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To run this frontend locally, ensure you have **Node.js** installed.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# 1. Navigate to the frontend directory
+cd frontend
 
-Follow these steps:
+# 2. Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Start the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+## 🔌 Backend Connection
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**Note:** This frontend is designed to consume the **UrbanGrowth-LSTM Python Backend**.
 
-**Use GitHub Codespaces**
+For the image processing to work:
+1.  The backend must be running locally on `http://127.0.0.1:8000`.
+2.  The API endpoint used is `POST /predict`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+If the backend is offline, the UI will load, but file uploads will return a connection error.
 
-## What technologies are used for this project?
+## 📂 Project Structure
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/23fb1f4a-66ab-4742-914b-3f9fe7eaacad) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```text
+src/
+├── components/      # Reusable UI components (Hero, ResultsGrid, etc.)
+├── pages/           # Main page views (Index.tsx)
+├── hooks/           # Custom React hooks (use-toast)
+└── main.tsx         # Entry point
