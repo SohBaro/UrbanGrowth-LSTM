@@ -96,7 +96,7 @@ Dataset: Trained on the DeepGlobe Road Extraction dataset.
 
 Metrics: Achieved an F1-Score of ~0.65 and Dice Coefficient of 0.61.
 
-###👤 Author
+
 <p>👤 Author — <a href="https://www.linkedin.com/in/soham-barot-85a80a2a7" target="_blank" rel="noopener">Soham Barot</a></p>
 
 
