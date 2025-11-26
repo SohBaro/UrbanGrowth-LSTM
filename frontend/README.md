@@ -6,7 +6,7 @@
 
 This directory contains the user interface for the **UrbanGrowth-LSTM** project. It is a modern, responsive web application built to visualize satellite road segmentation results in real-time.
 
-**🔗 Live Preview:** [Coming Soon on Vercel](#) *(Link will be updated after deployment)*
+**🔗 Live Preview:** [https://urban-growth-lstm.vercel.app/](https://urban-growth-lstm.vercel.app/)
 
 ## ⚡ Features
 
