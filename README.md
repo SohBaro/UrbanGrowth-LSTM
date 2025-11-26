@@ -6,7 +6,7 @@
 
 A full-stack deep learning application that automatically segments and extracts road networks from satellite imagery using a custom **Coordinate-Aware ConvLSTM-UNet** architecture.
 
-> **Live Demo:** [https://urban-growth-lstm.vercel.app/](https://urban-growth-lstm.vercel.app/)  
+> ** Live Demo:** [https://urban-growth-lstm.vercel.app/](https://urban-growth-lstm.vercel.app/)  
 > *(Note: The backend runs on a free cloud instance. The first request may take ~40s to wake up the server.)*
 
 ---
@@ -28,9 +28,10 @@ The model outputs a binary mask and a visual overlay, highlighting detected road
 ## 🌟 Key Features
 
 * **Advanced Deep Learning:** Uses a **ConvLSTM-UNet** with **Coordinate Attention** channels to capture global spatial dependencies and maintain road connectivity.
-* **Full-Stack Architecture:** * **Frontend:** Modern, responsive UI built with **React**, **TypeScript**, and **Tailwind CSS**.
+* **Full-Stack Architecture:**
+    * **Frontend:** Modern, responsive UI built with **React**, **TypeScript**, and **Tailwind CSS**.
     * **Backend:** High-performance REST API built with **FastAPI** and **OpenCV**.
-* **Real-time Inference:** optimized model serving via **Docker** containers.
+* **Real-time Inference:** Optimized model serving via **Docker** containers.
 * **Post-Processing Pipeline:** Custom morphological operations and skeletonization to produce GIS-ready road maps.
 * **Cloud Deployment:** Fully automated CI/CD pipeline deploying to **Vercel** (Frontend) and **Hugging Face Spaces** (Backend).
 
@@ -53,7 +54,7 @@ This project is structured as a Monorepo:
 
 ---
 
-##  Getting Started Locally
+## Getting Started Locally
 
 If you want to run the full stack on your own machine:
 
@@ -64,8 +65,8 @@ If you want to run the full stack on your own machine:
 
 ### 1. Backend Setup (The Brain)
 ⚠️ **Note:** The deep learning model is large. You must download the weights separately.
-1.  **[Download the model weights (`best_convlstm_unet.h5`) here](#)** *(Replace this with your Google Drive Link)*.
-2.  Place the file inside the `/backend` folder.
+1. **[Download the model weights (`best_convlstm_unet.h5`) here](https://drive.google.com/file/d/1JzlxVnEe9-tRCQg7D3my846b3zjvq1Qw/view?usp=sharing)**.
+2. Place the file inside the `/backend` folder.
 
 ```bash
 cd backend
@@ -95,8 +96,9 @@ Dataset: Trained on the DeepGlobe Road Extraction dataset.
 
 Metrics: Achieved an F1-Score of ~0.65 and Dice Coefficient of 0.61.
 
-👤 Author
+###👤 Author
 Soham Barot
+LinkedIn
 
 
 
