@@ -74,7 +74,7 @@ python -m uvicorn main:app --reload
 # Server will start on [http://127.0.0.1:8000](http://127.0.0.1:8000)
 ```
 
-2. Frontend Setup (The Interface)
+### 2. Frontend Setup (The Interface)
 Open a new terminal:
 
 Bash
