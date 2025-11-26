@@ -83,7 +83,7 @@ const Index = () => {
       
       {/* TOP RIGHT GITHUB BUTTON */}
       <a 
-        href="https://github.com/SohBaro" 
+        href="https://github.com/SohBaro/UrbanGrowth-LSTM" 
         target="_blank" 
         rel="noopener noreferrer"
         className="absolute top-6 right-6 p-2 bg-gray-800/50 hover:bg-gray-700 text-white rounded-full border border-gray-700 transition-all flex items-center gap-2 px-4 z-10"
