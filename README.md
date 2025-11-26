@@ -6,12 +6,12 @@
 
 A full-stack deep learning application that automatically segments and extracts road networks from satellite imagery using a custom **Coordinate-Aware ConvLSTM-UNet** architecture.
 
-> **🚀 Live Demo:** [https://urban-growth-lstm.vercel.app/](https://urban-growth-lstm.vercel.app/)  
+> ** Live Demo:** [https://urban-growth-lstm.vercel.app/](https://urban-growth-lstm.vercel.app/)  
 > *(Note: The backend runs on a free cloud instance. The first request may take ~40s to wake up the server.)*
 
 ---
 
-## 📸 Project Demo
+##  Project Demo
 
 ### 1. Interactive Dashboard
 The interface allows users to easily drag and drop satellite imagery for instant analysis.
@@ -37,7 +37,7 @@ The model outputs a binary mask and a visual overlay, highlighting detected road
 
 ---
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 This project is structured as a Monorepo:
 
@@ -54,7 +54,7 @@ This project is structured as a Monorepo:
 
 ---
 
-## 🚀 Getting Started Locally
+## Getting Started Locally
 
 If you want to run the full stack on your own machine:
 
@@ -73,3 +73,34 @@ cd backend
 pip install -r requirements.txt
 python -m uvicorn main:app --reload
 # Server will start on [http://127.0.0.1:8000](http://127.0.0.1:8000)
+```
+
+### 2. Frontend Setup (The Interface)
+Open a new terminal:
+
+```bash
+
+cd frontend
+npm install
+npm run dev
+# Dashboard will open on http://localhost:5173
+
+```
+
+### 🧠 Model Performance
+The underlying model addresses the common issue of "broken roads" in standard UNet segmentations.
+
+Architecture: Hybrid Loss (Dice + BCE) with Coordinate Conv layers.
+
+Dataset: Trained on the DeepGlobe Road Extraction dataset.
+
+Metrics: Achieved an F1-Score of ~0.65 and Dice Coefficient of 0.61.
+
+###👤 Author
+Soham Barot
+LinkedIn
+
+
+
+
+
