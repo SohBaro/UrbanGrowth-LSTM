@@ -77,12 +77,28 @@ python -m uvicorn main:app --reload
 ### 2. Frontend Setup (The Interface)
 Open a new terminal:
 
-Bash
+```bash
 
 cd frontend
 npm install
 npm run dev
 # Dashboard will open on http://localhost:5173
+
+```
+
+🧠 Model Performance
+The underlying model addresses the common issue of "broken roads" in standard UNet segmentations.
+
+Architecture: Hybrid Loss (Dice + BCE) with Coordinate Conv layers.
+
+Dataset: Trained on the DeepGlobe Road Extraction dataset.
+
+Metrics: Achieved an F1-Score of ~0.65 and Dice Coefficient of 0.61.
+
+👤 Author
+Soham Barot
+
+
 
 
 
