@@ -86,7 +86,7 @@ npm run dev
 
 ```
 
-🧠 Model Performance
+### 🧠 Model Performance
 The underlying model addresses the common issue of "broken roads" in standard UNet segmentations.
 
 Architecture: Hybrid Loss (Dice + BCE) with Coordinate Conv layers.
